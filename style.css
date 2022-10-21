@@ -8,6 +8,20 @@
     font-family:'Poppins', sans-serif;
 
 }
+.card{
+    background: white;
+    display: flex;
+    padding: 0;
+    margin-top: -10%;
+        
+}
+.card p{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+
+}
 
 body{
     background: #f5f6fa;
@@ -23,7 +37,7 @@ h1{
 }
 
 .colour .sidebar{
-    background: rgb(32, 19, 207);
+    background:#05277C;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,5 +78,5 @@ h1{
     display: block;
 }
 .logout{
-    margin-top: 260px;
+    margin-top: 210px;
 }

@@ -1,0 +1,84 @@
+
+  #container {
+    background-color: #fff;
+    width: 35%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+  }
+ 
+  .holder {
+    margin-right: 67%;
+  }
+  .holders{
+    margin-right: 60%;
+  }
+  .hold {
+    margin-right: 76%;
+  }
+  
+  #signin-form {
+    padding: 0 60px;
+  }
+  
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+  }
+  
+  input[type="text"],
+  input[type="phonenumber"],
+  input[type="password"],
+  input[type="confirmpassword"] {
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 0;
+    color: black;
+    border: 1px solid #05277C;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    background: none;
+  }
+
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    display: block;
+    background-color:  #6a89de;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  input[type="submit"]:hover {
+    background-color: #05277C;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  #create-account {
+    color: black;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-left: 54px;
+  }
+  img{
+    width: 50px;
+    height: 50px;
+    margin-left: 330px;
+  }
