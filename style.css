@@ -15,6 +15,72 @@
     margin-top: -10%;
         
 }
+.prof
+{
+    margin-left: 50%;
+}
+.prof img
+{
+    border-radius: 50px;
+    height: 8vh;
+    width: 50px;
+    margin-top: 30%;
+}
+.not
+{
+    margin-left: -100%;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.set
+{
+    margin-left: 20%;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.nav
+{
+    /* background-color: rgb(215, 248, 250); */
+    height: 12.5vh;
+    width: 84%;
+    margin-left: 16.5%;
+    position: fixed;
+}
+.navbar
+{
+    display: flex;
+    margin-left: 90%;
+}
+.nav
+{
+    display: flex;
+
+}
+.search
+{
+    margin-left: -55%;
+    margin-top: 2%;
+    /* border: 2px solid #000; */
+}
+/* .search input[type=text] {
+    border: 1px solid #ccc;  
+  } */
+
+
+.search-icon
+{
+    margin-left: 160%;
+    margin-top: -15%;
+    color: #dee4ec;
+}
+.search input[type = text]
+{
+    width: 100%;
+    border: 1px solid;
+    padding: 5%;
+    width: 180%;
+    border-radius: 10px;
+}
 .card p{
     margin-top: 30px;
     margin-left: 15px;
@@ -34,6 +100,10 @@ h1{
     font-size: 20px;
     color: white;
     margin-left: 40px;
+}
+.colour
+{
+    position: fixed;
 }
 
 .colour .sidebar{
@@ -80,3 +150,63 @@ h1{
 .logout{
     margin-top: 210px;
 }
+.container{
+    display: flex;
+    margin-top: 5%;
+}
+.contOne{
+    margin-left: 10%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #00ECFA;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+.contTwo{
+    margin-left: 9%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #E999E9;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+.contThree{
+    margin-left: 9%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #DD6165;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+#section{
+    margin-left: 12%;
+    padding: 2%;
+}
+.header{
+    padding: 1%;
+}
+.header .para{
+    font-size: 20px;
+    margin-left: 10%;
+}
+.para span{
+    margin-left: 50%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 83.5%;
+    margin-top: 18%;
+    margin-left: 16.5%;
+  }
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
