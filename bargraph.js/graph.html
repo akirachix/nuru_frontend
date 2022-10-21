@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="graph">
+    <canvas id="graph"></canvas>
+</div>
+
+<script>
+
+    let labels =['Jan', 'Feb', 'Mar', 'Apr',];
+    let Usersdata =[30, 100, 370,250];
+
+    const data = {
+
+        labels:labels ,
+        dataset: [{
+            data:Usersdata ,
+            backgroundColor:'rgb(207, 19, 28)'
+        }]
+    };
+
+    const config = {
+        typeof: 'bar',
+        data: data
+    };
+
+    const graph = new Chart(
+        document.getElementById('graph'),
+        config );
+
+</script>

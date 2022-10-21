@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 *{
     list-style: none;
     text-decoration: none;
@@ -6,25 +9,103 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 .card{
     background: white;
     display: flex;
     padding: 0;
     margin-top: -10%;
+<<<<<<< HEAD
         
+}
+.prof
+{
+    margin-left: 50%;
+}
+.prof img
+{
+    border-radius: 50px;
+    height: 8vh;
+    width: 50px;
+    margin-top: 30%;
+}
+.not
+{
+    margin-left: -100%;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.set
+{
+    margin-left: 20%;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.nav
+{
+    /* background-color: rgb(215, 248, 250); */
+    height: 12.5vh;
+    width: 84%;
+    margin-left: 16.5%;
+    position: fixed;
+}
+.navbar
+{
+    display: flex;
+    margin-left: 90%;
+}
+.nav
+{
+    display: flex;
+
+}
+.search
+{
+    margin-left: -55%;
+    margin-top: 2%;
+    /* border: 2px solid #000; */
+}
+/* .search input[type=text] {
+    border: 1px solid #ccc;  
+  } */
+
+
+.search-icon
+{
+    margin-left: 160%;
+    margin-top: -15%;
+    color: #dee4ec;
+}
+.search input[type = text]
+{
+    width: 100%;
+    border: 1px solid;
+    padding: 5%;
+    width: 180%;
+    border-radius: 10px;
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 .card p{
     margin-top: 30px;
     margin-left: 15px;
     font-size: 20px;
     font-family:'Poppins', sans-serif;
+<<<<<<< HEAD
 
 }
 
 body{
     background: #f5f6fa;
+=======
+}
+body{
+    background: #F5F6FA;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 img{
     width: 80px;
@@ -36,7 +117,14 @@ h1{
     color: white;
     margin-left: 40px;
 }
+<<<<<<< HEAD
+.colour
+{
+    position: fixed;
+}
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 .colour .sidebar{
     background:#05277C;
     position: fixed;
@@ -55,14 +143,20 @@ h1{
     position: relative;
     margin-top: 40px ;
 }
+<<<<<<< HEAD
 
 .colour .sidebar ul li a .icon{
     color: #dee4ec;
+=======
+.colour .sidebar ul li a .icon{
+    color: #DEE4EC;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
     width: 30px;
     display: inline-block;
 }
 .colour .sidebar ul li a:hover,
 .colour .sidebar ul li a.active{
+<<<<<<< HEAD
     color: #0c7db1;
 
     background:white;
@@ -74,6 +168,16 @@ h1{
     color: #0c7db1;
 }
 
+=======
+    color: #0C7DB1;
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+.colour.sidebar ul li a:hover .icon,
+.colour .sidebar ul li a.active .icon{
+    color: #0C7DB1;
+}
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 .colour .sidebar ul li a:hover:before,
 .colour .sidebar ul li a.active:before{
     display: block;
@@ -81,5 +185,79 @@ h1{
 .logout{
     margin-top: 210px;
 }
+<<<<<<< HEAD
 
  
+=======
+<<<<<<< HEAD
+.container{
+    display: flex;
+    margin-top: 5%;
+}
+.contOne{
+    margin-left: 10%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #00ECFA;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+.contTwo{
+    margin-left: 9%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #E999E9;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+.contThree{
+    margin-left: 9%;
+    justify-content: space-between;
+    width: 19%;
+  padding: 10px;
+  background-color: #DD6165;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
+}
+#section{
+    margin-left: 12%;
+    padding: 2%;
+}
+.header{
+    padding: 1%;
+}
+.header .para{
+    font-size: 20px;
+    margin-left: 10%;
+}
+.para span{
+    margin-left: 50%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 83.5%;
+    margin-top: 18%;
+    margin-left: 16.5%;
+  }
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+=======
+.validation {
+    display: none;
+    position: absolute;
+    content: " ";
+    height: 60px;
+    width: 30px;
+    right: 15px;
+    top: 0px;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
+  }
+>>>>>>> e6a77d7425995e550818cd97ab1a4cbeac66b366
