@@ -1,5 +1,83 @@
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+
+body{
+    background: #f5f6fa;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+h1{
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+
+.colour .sidebar{
+    background: rgb(32, 19, 207);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.colour .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+    margin-top: 40px ;
+}
+
+.colour .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.colour .sidebar ul li a:hover,
+.colour .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.colour.sidebar ul li a:hover .icon,
+.colour .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.colour .sidebar ul li a:hover:before,
+.colour .sidebar ul li a.active:before{
+    display: block;
+}
+.logout{
+    margin-top: 260px;
+}
+
+#section{
+    margin-left: 12%;
+    padding: 2%;
+
+    
+}
+
+
 .header{
     padding: 1%;
+
    
 }
 .header .para{
@@ -18,16 +96,16 @@
 .contOne{
     margin-left: 10%;
     justify-content: space-between;
-    width: 12%;
+    width: 19%;
   padding: 10px;
   background-color: #00ECFA;
   border-radius: 10px;
   height: 100px;
 }
 .contTwo{
-    margin-left: 15%;
+    margin-left: 9%;
     justify-content: space-between;
-    width: 12%;
+    width: 19%;
   padding: 10px;
   background-color: #E999E9;
   border-radius: 10px;
@@ -35,22 +113,117 @@
 }
 .contThree{
 
-    margin-left: 20%;
+    margin-left: 9%;
     justify-content: space-between;
-    width: 12%;
+    width: 19%;
   padding: 10px;
   background-color: #DD6165;
   border-radius: 10px;
   height: 100px;
 }
 
+
 .container2{
     padding: 20%;
+    margin-left: 22%;
+    margin-right: 14%;
     display: flex;
     justify-content: space-between;
-    flex: 1;
+    flex:2;
     padding: 30px;
-    box-shadow: 2px 4px  rgba(201, 201, 201, 0.47);
-  border-radius: 5px;
+    box-shadow: 2px 4px 2px 4px #cfc9c9f1;
+    border-radius: 5px;
+    padding-bottom: 2%;
    
 }
+.container3{
+    padding: 20%;
+    margin-left: 22%;
+    margin-right: 14%;
+    display: flex;
+    justify-content: space-between;
+    flex:2;
+    padding: 30px;
+    box-shadow: 2px 4px 2px 4px #cfc9c9f1;
+    border-radius: 5px;
+    padding-bottom: 2%;
+}
+
+.pie {
+    --p:20;
+    --b:22px;
+    --c:rgb(197, 194, 27);
+    --w:150px;
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+    margin-right: 55%;
+    margin-top: 10%;
+    padding: 5%;
+   
+  }
+
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie:before {
+    inset:0;
+    background:#E999E9;
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(9% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie1{
+    --p:20;
+    --b:22px;
+    --c:rgb(197, 194, 27);
+    --w:150px;
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+    margin-right: 55%;
+    margin-left: -10%;
+    margin-top: 10%;
+    padding: 5%;
+  }
+  .pie1:before,
+  .pie1:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie1:before {
+    inset:0;
+    background:#E999E9;
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(9% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  /* .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  } */
+  .animate {
+    animation:p 1s .5s both;
+    
+  }
+  /* .no-round:before {
+    background-size:0 0,auto;
+  } */
+  .no-round:after {
+    content:none;
+  }
