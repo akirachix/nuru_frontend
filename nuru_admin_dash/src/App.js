@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./style/dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import Profile from "./components/profile/Profile";
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="sms">
-              <Route index element={<Sms/>}/>
-            </Route>
+              <Route index element={<Sms/>}/></Route>
+
+              <Route path="/profile" element={<Profile/>} />
           </Route>
         </Routes>
       </BrowserRouter>
