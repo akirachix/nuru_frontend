@@ -8,15 +8,17 @@ const Featured = () => {
   return (
     <div className="featured">
       <div className="top">
-        <h1 className="title">Sent SMS</h1>
-        <MoreVertIcon fontSize="small" />
+        {/* <h1 className="title">Sent SMS</h1>
+        <MoreVertIcon fontSize="small" /> */}
       </div>
       <div className="bottom">
+      <p className="amount">Costs</p>
+      <p className="title">Total Cost</p>
         <div className="featuredChart">
-          <CircularProgressbar value={59} text={"59%"} strokeWidth={15} />
+          <CircularProgressbar value={59} text={"4.213%"} strokeWidth={15} />
         </div>
-        <p className="title">Total sms sent today</p>
-        <p className="amount">1420</p>
+        <p className="strong"><strong>.</strong> sms</p>
+       
         <div className="summary">
 
         </div>

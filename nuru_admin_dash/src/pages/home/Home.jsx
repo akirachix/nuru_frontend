@@ -11,7 +11,7 @@ const Home = () => {
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-        <Navbar />
+      <Navbar />
         <div className="total-sms">
           <Widget type="total" />
           <Widget type="consumed" />
