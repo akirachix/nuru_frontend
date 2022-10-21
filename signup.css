@@ -1,4 +1,24 @@
 
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    color: #3ca9e2;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  a:focus, a:hover,
+  a:link:focus,
+  a:link:hover,
+  a:visited:focus,
+  a:visited:hover,
+  a:active:focus,
+  a:active:hover {
+    color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
   #container {
     background-color: #fff;
     width: 35%;
@@ -7,9 +27,7 @@
     padding: 20px 0 0 0;
     border-radius: 4px;
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
-    margin-top: 10%;
   }
- 
   .holder {
     margin-right: 67%;
   }
@@ -31,7 +49,7 @@
     outline: none;
     height: 60px;
     line-height: 60px;
-    border-radius: 10px;
+    border-radius: 4px;
   }
   
   input[type="text"],
@@ -43,21 +61,37 @@
     margin: 0;
     color: black;
     border: 1px solid #05277C;
+    font-style: normal;
     font-size: 16px;
     position: relative;
     display: inline-block;
     background: none;
   }
-
+  input[type="text"]:focus,
+  input[type="phonumber"]:focus,
+  input[type="password"]:focus
+  input[type="confirmpassword"]:focus {
+    border-color: #3ca9e2;
+  }
+  
+  .validation {
+    display: none;
+    position: absolute;
+    content: " ";
+    height: 60px;
+    width: 30px;
+    right: 15px;
+    top: 0px;
+  }
   
   input[type="submit"] {
-    margin-top: 20px;
     border: none;
     display: block;
-    background-color:  #6a89de;
-    color: #fff;
+    background-color: #6a89de;
+    color: rgb(237, 236, 236);
     font-weight: bold;
     cursor: pointer;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-size: 18px;
     position: relative;
@@ -66,16 +100,17 @@
     text-align: center;
   }
   input[type="submit"]:hover {
-    background-color: #05277C;
+    background-color: #329dd5;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
   
-  #create-account {
+  #create-account-wrap {
     color: black;
     font-size: 14px;
+    width: 100%;
     padding: 10px 0;
-    margin-left: 54px;
+    border-radius: 0 0 4px 4px;
   }
   img{
     width: 50px;

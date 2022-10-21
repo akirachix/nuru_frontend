@@ -12,26 +12,43 @@
   
    <div id="container">
     <h2>LOGIN</h2>
-    <div id="login-form">
+    <form id="login-form">
       <label class="hold"><b>Username</b></label>
       <p>
-      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
       </p>
       <label class="hold"><b>Password</b></label>
       <p>
-      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
       </p>
       <p>
       <a href="http://127.0.0.1:5500/index.html">
       <input type="submit" id="login" value="Submit">
       </a>
       </p>
-     </div>
-    <div id="create-account">
+      </form>
+      <div id="create-account">
       <p>Not a member? <a href="http://127.0.0.1:5500/signup.html#">Create Account</a>
         <img src="/image/pic.png" alt=""><p>
     </div>
   </div>
     
+     <!-- <div id="login-form-wrap">
+      <h2>Login</h2>
+      <form id="login-form">
+        <p>
+        <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+        <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+        <input type="submit" id="login" value="Login">
+        </p>
+      </form>
+      <div id="create-account-wrap">
+        <p>Not a member? <a href="#">Create Account</a><p>
+      </div>
+    </div> -->
 </body>
 </html>
