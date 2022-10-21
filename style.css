@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 *{
     list-style: none;
     text-decoration: none;
@@ -6,13 +9,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 .card{
     background: white;
     display: flex;
     padding: 0;
     margin-top: -10%;
+<<<<<<< HEAD
         
 }
 .prof
@@ -80,17 +87,25 @@
     padding: 5%;
     width: 180%;
     border-radius: 10px;
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 .card p{
     margin-top: 30px;
     margin-left: 15px;
     font-size: 20px;
     font-family:'Poppins', sans-serif;
+<<<<<<< HEAD
 
 }
 
 body{
     background: #f5f6fa;
+=======
+}
+body{
+    background: #F5F6FA;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 }
 img{
     width: 80px;
@@ -102,11 +117,14 @@ h1{
     color: white;
     margin-left: 40px;
 }
+<<<<<<< HEAD
 .colour
 {
     position: fixed;
 }
 
+=======
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 .colour .sidebar{
     background:#05277C;
     position: fixed;
@@ -125,14 +143,20 @@ h1{
     position: relative;
     margin-top: 40px ;
 }
+<<<<<<< HEAD
 
 .colour .sidebar ul li a .icon{
     color: #dee4ec;
+=======
+.colour .sidebar ul li a .icon{
+    color: #DEE4EC;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
     width: 30px;
     display: inline-block;
 }
 .colour .sidebar ul li a:hover,
 .colour .sidebar ul li a.active{
+<<<<<<< HEAD
     color: #0c7db1;
 
     background:white;
@@ -144,6 +168,16 @@ h1{
     color: #0c7db1;
 }
 
+=======
+    color: #0C7DB1;
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+.colour.sidebar ul li a:hover .icon,
+.colour .sidebar ul li a.active .icon{
+    color: #0C7DB1;
+}
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
 .colour .sidebar ul li a:hover:before,
 .colour .sidebar ul li a.active:before{
     display: block;
@@ -151,6 +185,7 @@ h1{
 .logout{
     margin-top: 210px;
 }
+<<<<<<< HEAD
 .container{
     display: flex;
     margin-top: 5%;
@@ -210,4 +245,14 @@ table {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
+=======
+.validation {
+    display: none;
+    position: absolute;
+    content: " ";
+    height: 60px;
+    width: 30px;
+    right: 15px;
+    top: 0px;
+>>>>>>> 792044cff4cb347fc44c171740664de23312bc52
   }
