@@ -8,14 +8,17 @@
     font-family:'Poppins', sans-serif;
 
 }
-
+.logo{
+    background-color: white;
+    padding: 0;
+    margin-top: -10%;
+}
 body{
     background: #f5f6fa;
 }
 img{
     width: 80px;
     height: 80px;
-    background-color: white;
 }
 h1{
     font-size: 20px;
@@ -66,4 +69,66 @@ h1{
 }
 .logout{
     margin-top: 260px;
+}
+
+.profileContainer{
+    padding: 20%;
+    margin: 3%;
+    margin-left: 22%;
+    margin-right: 14%;
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    width: 0%;
+    height: 70vh;
+    box-shadow: 2px 4px 2px 4px #cfc9c9f1;
+    border-radius: 5px;
+    padding-bottom: 2%;
+}
+.profileContainer p{
+    padding: 2%;
+    margin-left: -140px;
+}
+.profileContainer .text{
+    display: flex;
+}
+.prof{
+    width: 600px;
+    margin-top: -255px;
+    margin-left: -100px;
+    /* padding: 20%; */
+    height: 250px;
+    /* margin-top: 70%;
+    margin-bottom: -30%; */
+}
+
+.notification .p1{
+    border-radius: 5px;
+    padding: 1%;
+    width: 20%;
+    font-size: 20px;
+    background-color: #00ECFA;
+    margin-left: 70%;
+    text-align: center;
+    margin-top: -30%;
+  
+    
+}
+.notification .p2{
+    border-radius: 5px;
+    padding: 1%;
+    width: 20%;
+    font-size: 20px;
+    background-color: black;
+    margin-left: 70%;
+    text-align: center;
+    margin-top: -30%;
+  
+    
+}
+
+.about-col-1{
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
 }
