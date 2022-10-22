@@ -149,7 +149,7 @@ export default function Sidebar() {
 const Section = styled.section`
   position: fixed;
   left: 0;
-  background-color: blue;
+  background-color: #05277C;
   margine-bottom:50%;
   height: 100vh;
   width: 15vw;
