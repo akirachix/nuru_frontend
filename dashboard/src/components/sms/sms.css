@@ -1,0 +1,136 @@
+.container{
+    flex: 1;
+    
+
+}
+.container .widgets {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  .container .widgets {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+ 
+  .container .allCharts {
+    display: flex;
+    padding: 50px;
+    margin-left: 20%;
+  }
+  .container .allCharts .charts {
+    width: 100%;
+  }
+/* 
+.sms {
+    display: flex;
+    width: 100%;
+  }
+  .sms .smsContainer {
+    flex: 6;
+  }
+  .sms .smsContainer .widgets {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  .sms .smsContainer .para {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: -5%;
+  }
+  .sms .smsContainer .para span {
+    margin-left: 47%;
+  }
+  .sms .smsContainer .allCharts {
+    display: flex;
+    padding: 50px;
+  }
+  .sms .smsContainer .allCharts .charts {
+    width: 50%;
+  }
+  
+  .total {
+    display: flex;
+    margin-top: 5%;
+    padding: 2%;
+    margin-left: 1%;
+  } */
+
+.sms{
+    padding: 3%;
+}
+
+.icon
+{
+    width: 200px;
+    display: flex;
+}
+.sms-container{
+    text-align: center;
+    margin-left: -50%;
+}
+.sms-container .para{
+    font-size: 20px;
+    margin-left: 41%;
+}
+.sms-container .para span{
+    font-size: 20px;
+    margin-left: 56%;
+}
+
+.sms1 p
+{
+    margin-left: 5%;
+    /* padding: 3%; */
+}
+.sms2 p
+{
+    margin-left: 5%;
+    /* padding: 3%; */
+}
+.sms3 p
+{
+    margin-left: 5%;
+    /* padding: 3%; */
+}
+.sms1
+{
+    /* text-align: center; */
+    margin-left: 22%;
+    background-color: #66F4FC;
+    width: 20%;
+    box-shadow: 4px 8px  rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    /* padding: 1%; */
+}
+.sms2
+{
+    /* text-align: center; */
+    margin-left:7%;
+    background-color: #F2C2F2;
+    width: 20%;
+    box-shadow: 4px 8px  rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    /* padding: 1%; */
+}
+.sms3
+{
+    /* text-align: center; */
+    margin-left: 8%;
+    background-color: #EBA0A3;
+    width: 20%;
+    box-shadow: 4px 8px  rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    /* padding: 1%; */
+}
+.smss
+{
+    display: flex;
+}
+
+
