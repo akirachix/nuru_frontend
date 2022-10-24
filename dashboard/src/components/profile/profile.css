@@ -80,7 +80,7 @@
     margin-bottom: 1px;
   }
   
-  .maureen-masau {
+  .name{
     margin-bottom: 8px;
     margin-left: 33px;
   }
@@ -101,11 +101,11 @@
     object-fit: cover;
   }
   
-  .nairobi-kenya {
+  .location {
     margin-top: 1px;
   }
   
-  .lorem-ipsum-is-simpl {
+  .text {
     align-self: center;
     margin-bottom: 19px;
   }

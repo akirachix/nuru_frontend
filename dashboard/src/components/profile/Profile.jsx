@@ -11,12 +11,12 @@ const Profile = () => {
         <br />
         <div className="rectangle-105">
           <img className="rectangle-106" src={profile} />
-          <span className="maureen-masau">Maureen Masau</span>
+          <span className="name">Maureen Masau</span>
           <div className="flex-container-1">
             {/* <img className="vector" src={profile} /> */}
-            <span className="nairobi-kenya">Nairobi, Kenya</span>
+            <span className="location">Nairobi, Kenya</span>
           </div>
-          <span className="lorem-ipsum-is-simpl">
+          <span className="text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever ... More

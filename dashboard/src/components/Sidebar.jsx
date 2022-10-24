@@ -306,16 +306,25 @@ const Nav = styled.nav`
     }
   }
   .search {
-    background-color: lightgrey;
-    margine-left:100%;
-    margin-top:2%;
+    margin-top:2%
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 8rem 1rem 1rem;
-    border-radius: 1rem;
-    svg {
-      color: black;
+    padding: 35px;
+    margin-right: 180px;
+    border-radius: 2px;
+    input {
+      background:lightgrey;
+      border: none;
+      height:30px;
+      width:200%;
+      // padding:0px;
+      // margin-left:10px;
+      // letter-spacing: 0.3rem;
+      // &::placeholder {
+      //   margine-left:100%;
+      //   // color: black;
+      // }
     }
+  }
     input {
       background:lightgrey;
       border: none;
