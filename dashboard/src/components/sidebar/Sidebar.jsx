@@ -6,10 +6,10 @@ import { FaAddressCard, FaTaxi } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
-import image from "../image/nuru.png";
+import logo from "../sidebar/nuru.png";
 import { BiSearch } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
-import prof from "../image/profile.jpeg";
+import prof from "../sidebar/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
 
 export default function Sidebar() {
@@ -22,17 +22,16 @@ export default function Sidebar() {
 
     return (
         <>
+          
+            <Section>
             <Nav>
                 <div className="title">
-                    <h1>
-                        <span></span>
-                    </h1>
 
                     <div className="search">
                         <BiSearch />
                         <input type="text" placeholder="Search" />
                     </div>
-                </div>
+                
                 <div className="notification">
                     <VscBell />
                 </div>
@@ -42,16 +41,17 @@ export default function Sidebar() {
                 <div className="image">
                     <img src={prof} alt="" />
                 </div>
+                </div>
             </Nav>
 
-            <Section>
                 <div className="top">
                     <div className="brand">
 
                         <div className="nuruimage">
-                            <img src={image} alt="" />
+                            <img src={logo}/>
                         </div>
                         <span>NuruCare</span>
+                        
                     </div>
                     <div className="toggle">
                         {navbarState ? (
@@ -150,7 +150,7 @@ const Section = styled.section`
   position: fixed;
   left: 0;
   background-color: #05277C;
-  margine-bottom:50%;
+  margin-top:50%;
   height: 100vh;
   width: 15vw;
   display: flex;
@@ -171,7 +171,7 @@ const Section = styled.section`
     .brand {
       width: 100%;
       height:80px;
-      margin-top:-98px;
+      margin-top:-245px;
       background:white;
       display: flex;
       justify-content: center;
@@ -180,7 +180,7 @@ const Section = styled.section`
       svg {
         color: #ffc107;
         font-size: 10px;
-      }
+      } 
       span {
         font-size: 20px;
         color: black;
@@ -284,29 +284,24 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   color: white;
-  margine-left:90%;
+  margin-top:10px;
   .title {
     display: flex;
-    h1 {
-      span{
-        margin-left: 40rem;
-      }
-
-    }
+    margin-left: 120rem;
+    margin-top:-20px;
   }
   .search {
     background-color: lightgrey;
-    margine-left:100%;
     margin-top:2%;
     align-items: center;
     gap: 1rem;
     padding: 1rem 8rem 1rem 1rem;
     border-radius: 1rem;
+    display:flex;
     svg {
       color: black;
     }
     input {
-      background:lightgrey;
       border: none;
       margin-left:10px;
       letter-spacing: 0.3rem;
@@ -338,6 +333,7 @@ const Nav = styled.nav`
       color: grey;
       width:25px;
       height:25px;
+      margin-left:19px;
     }
   }
   .notification{
@@ -347,6 +343,8 @@ const Nav = styled.nav`
       color: grey;
       width:25px;
       height:25px;
+      margin-left:19px;
+
     }
   }
 
