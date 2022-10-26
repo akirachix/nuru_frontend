@@ -14,7 +14,7 @@ const Featured = () => {
 
       <hr/>
         <div className="featuredChart">
-          <CircularProgressbar value={59} text={"4.213%"} strokeWidth={15} />
+          <CircularProgressbar value={59} text={"59%"} strokeWidth={15} />
         </div>
         <p className="strong"><strong>.</strong> sms</p>
         <div className="summary">
