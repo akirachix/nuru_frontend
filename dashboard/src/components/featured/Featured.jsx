@@ -10,7 +10,9 @@ const Featured = () => {
       </div>
       <div className="bottom">
       <p className="amount1">Sent Sms</p>
-     <hr className="hr" />
+      <input type="date" className="start" name="trip-start" value="2022-07-22" min="2022-01-01" max="2022-12-31"></input>
+
+      <hr/>
         <div className="featuredChart">
           <CircularProgressbar value={59} text={"4.213%"} strokeWidth={15} />
         </div>

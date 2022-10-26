@@ -4,10 +4,10 @@
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     padding: 50px;
     width: 30%;
+    /* height: 60vh; */
     margin-left:60%;
     margin-top: 3%;
   }
-
   .featured .top {
     display: flex;
     align-items: center;
@@ -36,15 +36,16 @@
   .featured .bottom .featuredChart {
     width: 200px;
     height: 200px;
-    margin-top: 1%;
+    margin-top: 35%;
     margin-right: 50%;
   }
   .featured .bottom .strong {
-    margin-right: 50%;
+    margin-left: -105%;
   }
   .featured .bottom .strong strong {
     font-size: 90px;
-    color: #E999E9;
+    color: #3E98C7;
+
   }
    .title1 {
     font-weight: 500;
@@ -52,9 +53,21 @@
     margin-right: 200%;
     font-size: 15px;
   }
-
+  .start{
+    margin-top: -23%;
+    margin-left: 155%;
+    padding: 2%;
+    border-radius: 10px;
+  }
+  hr{  
+   width: 200%;  
+   margin-left: -45%;
+   margin-top: 20%;
+   background-color: rgb(119, 119, 119);  
+   border-width: 1px;   
+  }  
   .featured .bottom .amount1 {
-    margin-top: 8%;
+    margin-top: -20%;
     font-weight: 300;
     
     color: black;
@@ -95,4 +108,3 @@
   }
 
 
-  

@@ -151,7 +151,7 @@ export default function Sidebar() {
             <Featured/>
             <List/>
            
-            {/* <Chart/>   */}
+            {/* <Chart/>  */}
         </>
 
     );
