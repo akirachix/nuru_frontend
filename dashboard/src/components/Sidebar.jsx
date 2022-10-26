@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import styled from "styled-components";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiDashboard2Fill } from "react-icons/ri";
-import { FaAddressCard, FaTaxi } from "react-icons/fa";
+import { FaAddressCard} from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
@@ -11,12 +11,17 @@ import { BiSearch } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
 import prof from "../image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
+import Card from "./card/Card";
+import List from "./table/Table";
+import Featured from "./featured/Featured";
+// import Chart from "./charts/Chart";
+// import Featured from "./featured/Featured";
 
 export default function Sidebar() {
-    const [currentLink, setCurrentLink] = useState(1);
-    const [navbarState, setNavbarState] = useState(false);
-    const html = document.querySelector("html");
-    html.addEventListener("click", () => setNavbarState(false));
+  const [currentLink, setCurrentLink] = useState(1);
+  const [navbarState, setNavbarState] = useState(false);
+  const html = document.querySelector("html");
+  html.addEventListener("click", () => setNavbarState(false));
 
 
 
@@ -142,6 +147,11 @@ export default function Sidebar() {
                     </ul>
                 </div>
             </ResponsiveNav>
+            <Card/>
+            <Featured/>
+            <List/>
+           
+            {/* <Chart/>   */}
         </>
 
     );
@@ -149,6 +159,7 @@ export default function Sidebar() {
 const Section = styled.section`
   position: fixed;
   left: 0;
+  position: fixed;
   background-color: #05277C;
   margine-bottom:50%;
   height: 100vh;
@@ -221,7 +232,7 @@ const Section = styled.section`
   }
   .nuruimage img
   {
-    width: 125%;
+    width: 110%;
     height: 15vh;
   }
 
