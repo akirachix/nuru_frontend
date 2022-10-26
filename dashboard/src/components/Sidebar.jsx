@@ -11,12 +11,18 @@ import { BiSearch } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
 import prof from "../image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
+import Sms from "./sms/Sms";
+import Profile from "./profile/Profile";
+// import {Link, useNavigate} from 'react-router-dom'
+
 
 export default function Sidebar() {
     const [currentLink, setCurrentLink] = useState(1);
     const [navbarState, setNavbarState] = useState(false);
     const html = document.querySelector("html");
-    html.addEventListener("click", () => setNavbarState(false));
+    // const navigate = useNavigate()  
+    // const movetoProfile = () =>navigate('/profile')
+    
 
 
 
@@ -40,7 +46,10 @@ export default function Sidebar() {
                     <IoSettings />
                 </div>
                 <div className="image">
-                    <img src={prof} alt="" />
+               
+                  <img src={prof} alt="" />
+                  
+                   
                 </div>
             </Nav>
 
@@ -80,7 +89,7 @@ export default function Sidebar() {
                                 className={currentLink === 2 ? "active" : "none"}
                                 onClick={() => setCurrentLink(2)}
                             >
-                                <a href="#">
+                                <a href="/sms">
                                     <RiDashboard2Fill />
                                     <span> SMS</span>
                                 </a>
@@ -122,7 +131,7 @@ export default function Sidebar() {
                             className={currentLink === 2 ? "active" : "none"}
                             onClick={() => setCurrentLink(2)}
                         >
-                            <a href="#">
+                            <a href="/sms">
                                 <RiDashboard2Fill />
                                 <span> SMS</span>
                             </a>
@@ -142,6 +151,8 @@ export default function Sidebar() {
                     </ul>
                 </div>
             </ResponsiveNav>
+            {/* <Sms/> */}
+           
         </>
 
     );
@@ -295,16 +306,25 @@ const Nav = styled.nav`
     }
   }
   .search {
-    background-color: lightgrey;
-    margine-left:100%;
-    margin-top:2%;
+    margin-top:2%
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 8rem 1rem 1rem;
-    border-radius: 1rem;
-    svg {
-      color: black;
+    padding: 35px;
+    margin-right: 180px;
+    border-radius: 2px;
+    input {
+      background:lightgrey;
+      border: none;
+      height:30px;
+      width:200%;
+      // padding:0px;
+      // margin-left:10px;
+      // letter-spacing: 0.3rem;
+      // &::placeholder {
+      //   margine-left:100%;
+      //   // color: black;
+      // }
     }
+  }
     input {
       background:lightgrey;
       border: none;
