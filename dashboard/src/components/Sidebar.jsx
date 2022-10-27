@@ -14,8 +14,7 @@ import { VscBell } from "react-icons/vsc";
 import Card from "./card/Card";
 import List from "./table/Table";
 import Featured from "./featured/Featured";
-import Chart from "./charts/Chart";
-// import Featured from "./featured/Featured";
+// import Chart from "./charts/Chart";
 
 export default function Sidebar() {
   const [currentLink, setCurrentLink] = useState(1);
@@ -151,7 +150,7 @@ export default function Sidebar() {
             <Featured/>
             <List/>
            
-            <Chart/> 
+            {/* <Chart/>  */}
         </>
 
     );
