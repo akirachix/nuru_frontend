@@ -6,33 +6,26 @@ import { FaAddressCard, FaTaxi } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
-import image from "../image/nuru.png";
+import logo from "../sidebar/nuru.png";
 import { BiSearch } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
-import prof from "../image/profile.jpeg";
+import prof from "../sidebar/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
-
+import bootstrap from 'bootstrap';
 export default function Sidebar() {
     const [currentLink, setCurrentLink] = useState(1);
     const [navbarState, setNavbarState] = useState(false);
     const html = document.querySelector("html");
     html.addEventListener("click", () => setNavbarState(false));
-
-
-
     return (
         <>
+            <Section>
             <Nav>
                 <div className="title">
-                    <h1>
-                        <span></span>
-                    </h1>
-
                     <div className="search">
                         <BiSearch />
                         <input type="text" placeholder="Search" />
                     </div>
-                </div>
                 <div className="notification">
                     <VscBell />
                 </div>
@@ -42,14 +35,12 @@ export default function Sidebar() {
                 <div className="image">
                     <img src={prof} alt="" />
                 </div>
+                </div>
             </Nav>
-
-            <Section>
                 <div className="top">
                     <div className="brand">
-
                         <div className="nuruimage">
-                            <img src={image} alt="" />
+                            <img src={logo}/>
                         </div>
                         <span>NuruCare</span>
                     </div>
@@ -71,7 +62,7 @@ export default function Sidebar() {
                                 className={currentLink === 1 ? "active" : "none"}
                                 onClick={() => setCurrentLink(1)}
                             >
-                                <a href="#">
+                                <a href="Dashboard">
                                     <MdSpaceDashboard />
                                     <span> Dashboard</span>
                                 </a>
@@ -80,7 +71,7 @@ export default function Sidebar() {
                                 className={currentLink === 2 ? "active" : "none"}
                                 onClick={() => setCurrentLink(2)}
                             >
-                                <a href="#">
+                                <a href="SMS">
                                     <RiDashboard2Fill />
                                     <span> SMS</span>
                                 </a>
@@ -89,18 +80,16 @@ export default function Sidebar() {
                                 className={currentLink === 3 ? "active" : "none"}
                                 onClick={() => setCurrentLink(3)}
                             >
-                                <a href="#">
+                                <a href="users">
                                     <FaAddressCard />
                                     <span> Users</span>
                                 </a>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
                 <div className="logout">
-                    <a href="#">
+                    <a href="Logout">
                         <FiLogOut />
                         <span className="logout">Logout</span>
                     </a>
@@ -113,7 +102,7 @@ export default function Sidebar() {
                             className={currentLink === 1 ? "active" : "none"}
                             onClick={() => setCurrentLink(1)}
                         >
-                            <a href="#">
+                            <a href="Dashboard">
                                 <MdSpaceDashboard />
                                 <span> Dashboard</span>
                             </a>
@@ -122,7 +111,7 @@ export default function Sidebar() {
                             className={currentLink === 2 ? "active" : "none"}
                             onClick={() => setCurrentLink(2)}
                         >
-                            <a href="#">
+                            <a href="SMS">
                                 <RiDashboard2Fill />
                                 <span> SMS</span>
                             </a>
@@ -131,26 +120,22 @@ export default function Sidebar() {
                             className={currentLink === 3 ? "active" : "none"}
                             onClick={() => setCurrentLink(3)}
                         >
-                            <a href="#">
+                            <a href="users">
                                 <FaAddressCard />
                                 <span> Users</span>
                             </a>
                         </li>
-
-
-
                     </ul>
                 </div>
             </ResponsiveNav>
         </>
-
     );
 }
 const Section = styled.section`
   position: fixed;
   left: 0;
   background-color: #05277C;
-  margine-bottom:50%;
+  margin-top:1%;
   height: 100vh;
   width: 15vw;
   display: flex;
@@ -164,21 +149,20 @@ const Section = styled.section`
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-
     .toggle {
       display: none;
     }
     .brand {
       width: 100%;
       height:80px;
-      margin-top:-98px;
+      margin-top:-245px;
       background:white;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 2rem;
       svg {
-        color: #ffc107;
+        color: #FFC107;
         font-size: 10px;
       }
       span {
@@ -224,7 +208,6 @@ const Section = styled.section`
     width: 125%;
     height: 15vh;
   }
-
   .logout {
     margin-top:101px;
     padding: 0.3rem 1rem;
@@ -236,10 +219,10 @@ const Section = styled.section`
       color: white;
       margine-top:120px;
       span{
-        margine-top:150px;
+        margine-bottom:1-0px;
         color:white;
       }
-    }  
+    }
   }
   .image {
     height:5px;
@@ -249,7 +232,6 @@ const Section = styled.section`
           height: 5px
           width: 10px;
         }
-       
       }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     position: initial;
@@ -284,29 +266,47 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   color: white;
-  margine-left:90%;
+  margin-top:10px;
   .title {
     display: flex;
-    h1 {
-      span{
-        margin-left: 40rem;
-      }
-
-    }
+    margin-left: 120rem;
+    margin-top:-20px;
   }
+  // .search {
+  //   background-color: lightgrey;
+  //   margin-top:1%;
+  //   align-items: center;
+  //   padding: 35px;
+  //   gap: 1rem;
+  //   padding: 1rem 8rem 1rem 1rem;
+  //   border-radius: 1rem;
+  //   display:flex;
+  //   svg {
+  //     color: black;
+  //   }
+  //   input {
+  //     border: none;
+  //     margin-left:10px;
+  //     letter-spacing: 0.3rem;
+  //     &::placeholder {
+  //       margine-lef:100%;
+  //       color: black;
+  //     }
+  //   }
+  // }
   .search {
     background-color: lightgrey;
-    margine-left:100%;
-    margin-top:2%;
+    margin-top:1%;
     align-items: center;
+    padding: 35px;
     gap: 1rem;
     padding: 1rem 8rem 1rem 1rem;
     border-radius: 1rem;
+    display:flex;
     svg {
       color: black;
     }
     input {
-      background:lightgrey;
       border: none;
       margin-left:10px;
       letter-spacing: 0.3rem;
@@ -322,14 +322,12 @@ const Nav = styled.nav`
         margine-right:30px;
         width:100px;
         margin-top:2.5%;
-
         img {
           height: 2.3rem;
           width: 2.3rem;
           object-fit: cover;
           border-radius: 20rem;
         }
-       
       }
   .icon{
     color:black;
@@ -338,6 +336,7 @@ const Nav = styled.nav`
       color: grey;
       width:25px;
       height:25px;
+      margin-left:19px;
     }
   }
   .notification{
@@ -347,9 +346,9 @@ const Nav = styled.nav`
       color: grey;
       width:25px;
       height:25px;
+      margin-left:19px;
     }
   }
-
   }
   )
   `;
@@ -377,7 +376,7 @@ const ResponsiveNav = styled.div`
         padding: 0.6rem 1rem;
         border-radius: 0.6rem;
         &:hover {
-          background-color: #ffc107;
+          background-color: #FFC107;
           a {
             color: black;
           }
@@ -390,11 +389,10 @@ const ResponsiveNav = styled.div`
         }
       }
       .active {
-        background-color: #ffc107;
+        background-color: #FFC107;
         a {
           color: black;
         }
       }
     }
-  
 `;
