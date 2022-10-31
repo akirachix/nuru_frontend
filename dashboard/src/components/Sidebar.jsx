@@ -12,8 +12,13 @@ import { IoSettings } from "react-icons/io5";
 import prof from "../image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
 import Card from "./card/Card";
-import List from "./table/Table";
+// import List from "./table/Table";
 import Featured from "./featured/Featured";
+import ColorMapping from "./charts/Chart";
+import { Link } from "react-router-dom";
+
+
+// import Table from "./table/Table";
 // import Chart from "./charts/Chart";
 
 export default function Sidebar() {
@@ -33,13 +38,14 @@ export default function Sidebar() {
                     </h1>
 
                     <div className="search">
-                        <BiSearch />
+                        
                         <input type="text" placeholder="Search" />
                     </div>
                 </div>
                 <div className="notification">
                     <VscBell />
                 </div>
+               
                 <div className="icon">
                     <IoSettings />
                 </div>
@@ -148,9 +154,8 @@ export default function Sidebar() {
             </ResponsiveNav>
             <Card/>
             <Featured/>
-            <List/>
-           
-            {/* <Chart/>  */}
+            <ColorMapping/>
+            {/* <Table/> */}
         </>
 
     );
@@ -169,6 +174,10 @@ const Section = styled.section`
   justify-content: space-between;
   padding: 2rem 0;
   gap: 2rem;
+  .sach{
+    margin-left: 20%;
+    font-size: 20px;
+  }
   .top {
     display: flex;
     flex-direction: column;
@@ -305,12 +314,11 @@ const Nav = styled.nav`
     }
   }
   .search {
-    background-color: lightgrey;
     margine-left:100%;
-    margin-top:2%;
+    margin-top:4%;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 8rem 1rem 1rem;
+    padding: 1%;
     border-radius: 1rem;
     svg {
       color: black;
@@ -318,6 +326,11 @@ const Nav = styled.nav`
     input {
       background:lightgrey;
       border: none;
+      padding: 3%;
+      width: 130%;
+      height: 5vh;
+      border-radius: 10px;
+      margin-top: -15%;
       margin-left:10px;
       letter-spacing: 0.3rem;
       &::placeholder {
