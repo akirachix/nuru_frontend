@@ -14,7 +14,7 @@ function Users() {
     // setIsLoading(true);
     // try {
       // const response = await 
-      axios.get("https://still-oasis-20492.herokuapp.com/api/mother/")
+      axios.get("https://still-oasis-20492.herokuapp.com/api/mothers/")
       .then(res=>{
         console.log(res.data)
         setUsers(res.data)
