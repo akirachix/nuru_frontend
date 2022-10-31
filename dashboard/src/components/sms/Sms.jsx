@@ -1,9 +1,13 @@
 import Featured from "../featured/Featured";
+import Sidebar from "../Sidebar";
 import "./sms.css"
 
 function Sms (){
     return (
-        <div className="sms">
+     
+  
+        <div className="sms" id="id-sms">
+           <Sidebar/>
             <div className="container">
             <div className="sms-container">
             <p class="para">Notification type <span>Receipient</span></p>
@@ -45,6 +49,7 @@ function Sms (){
         </div>
             
         </div>
+  
         
     )
 }

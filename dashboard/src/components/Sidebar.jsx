@@ -13,149 +13,157 @@ import prof from "../image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
 import Sms from "./sms/Sms";
 import Profile from "./profile/Profile";
-// import {Link, useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 export default function Sidebar() {
-    const [currentLink, setCurrentLink] = useState(1);
-    const [navbarState, setNavbarState] = useState(false);
-    const html = document.querySelector("html");
-    // const navigate = useNavigate()  
-    // const movetoProfile = () =>navigate('/profile')
-    
+  const [currentLink, setCurrentLink] = useState(1);
+  const [navbarState, setNavbarState] = useState(false);
+  const html = document.querySelector("html");
+  // const navigate = useNavigate()  
+  // const movetoProfile = () =>navigate('/profile')
 
 
 
-    return (
-        <>
-            <Nav>
-                <div className="title">
-                    <h1>
-                        <span></span>
-                    </h1>
 
-                    <div className="search">
-                        <BiSearch />
-                        <input type="text" placeholder="Search" />
-                    </div>
-                </div>
-                <div className="notification">
-                    <VscBell />
-                </div>
-                <div className="icon">
-                    <IoSettings />
-                </div>
-                <div className="image">
-               
-                  <img src={prof} alt="" />
-                  
-                   
-                </div>
-            </Nav>
+  return (
+    <>
+      <Nav>
+        <div className="title">
+          <h1>
+            <span></span>
+          </h1>
 
-            <Section>
-                <div className="top">
-                    <div className="brand">
+          <div className="search">
+            <BiSearch />
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div className="notification">
+          <VscBell />
+        </div>
+        <div className="icon">
+          <IoSettings />
+        </div>
+        <Link path to='/profile'>
+          <div className="image">
+            <a href="/Profile">
 
-                        <div className="nuruimage">
-                            <img src={image} alt="" />
-                        </div>
-                        <span>NuruCare</span>
-                    </div>
-                    <div className="toggle">
-                        {navbarState ? (
-                            <VscChromeClose onClick={() => setNavbarState(false)} />
-                        ) : (
-                            <GiHamburgerMenu
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    setNavbarState(true);
-                                }}
-                            />
-                        )}
-                    </div>
-                    <div className="links">
-                        <ul>
-                            <li
-                                className={currentLink === 1 ? "active" : "none"}
-                                onClick={() => setCurrentLink(1)}
-                            >
-                                <a href="#">
-                                    <MdSpaceDashboard />
-                                    <span> Dashboard</span>
-                                </a>
-                            </li>
-                            <li
-                                className={currentLink === 2 ? "active" : "none"}
-                                onClick={() => setCurrentLink(2)}
-                            >
-                                <a href="/sms">
-                                    <RiDashboard2Fill />
-                                    <span> SMS</span>
-                                </a>
-                            </li>
-                            <li
-                                className={currentLink === 3 ? "active" : "none"}
-                                onClick={() => setCurrentLink(3)}
-                            >
-                                <a href="#">
-                                    <FaAddressCard />
-                                    <span> Users</span>
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-                <div className="logout">
-                    <a href="#">
-                        <FiLogOut />
-                        <span className="logout">Logout</span>
-                    </a>
-                </div>
-            </Section>
-            <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
-                <div className="responsive__links">
-                    <ul>
-                        <li
-                            className={currentLink === 1 ? "active" : "none"}
-                            onClick={() => setCurrentLink(1)}
-                        >
-                            <a href="#">
-                                <MdSpaceDashboard />
-                                <span> Dashboard</span>
-                            </a>
-                        </li>
-                        <li
-                            className={currentLink === 2 ? "active" : "none"}
-                            onClick={() => setCurrentLink(2)}
-                        >
-                            <a href="/sms">
-                                <RiDashboard2Fill />
-                                <span> SMS</span>
-                            </a>
-                        </li>
-                        <li
-                            className={currentLink === 3 ? "active" : "none"}
-                            onClick={() => setCurrentLink(3)}
-                        >
-                            <a href="#">
-                                <FaAddressCard />
-                                <span> Users</span>
-                            </a>
-                        </li>
+              <img src={prof} alt="" />
+            </a>
 
 
 
-                    </ul>
-                </div>
-            </ResponsiveNav>
-            {/* <Sms/> */}
-           
-        </>
+          </div>
+        </Link>
 
-    );
+
+      </Nav>
+
+      <Section>
+        <div className="top">
+          <div className="brand">
+
+            <div className="nuruimage">
+              <img src={image} alt="" />
+            </div>
+            <span>NuruCare</span>
+          </div>
+          <div className="toggle">
+            {navbarState ? (
+              <VscChromeClose onClick={() => setNavbarState(false)} />
+            ) : (
+              <GiHamburgerMenu
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setNavbarState(true);
+                }}
+              />
+            )}
+          </div>
+          <div className="links">
+            <ul>
+              <li
+                className={currentLink === 1 ? "active" : "none"}
+                onClick={() => setCurrentLink(1)}
+              >
+                <a href="#">
+                  <MdSpaceDashboard />
+                  <span> Dashboard</span>
+                </a>
+              </li>
+              <li
+                className={currentLink === 2 ? "active" : "none"}
+                onClick={() => setCurrentLink(2)}
+              >
+                <a href="/sms">
+                  <RiDashboard2Fill />
+                  <span> SMS</span>
+                </a>
+              </li>
+              <li
+                className={currentLink === 3 ? "active" : "none"}
+                onClick={() => setCurrentLink(3)}
+              >
+                <a href="#">
+                  <FaAddressCard />
+                  <span> Users</span>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+        <div className="logout">
+          <a href="#">
+            <FiLogOut />
+            <span className="logout">Logout</span>
+          </a>
+        </div>
+      </Section>
+      <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
+        <div className="responsive__links">
+          <ul>
+            <li
+              className={currentLink === 1 ? "active" : "none"}
+              onClick={() => setCurrentLink(1)}
+            >
+              <a href="#">
+                <MdSpaceDashboard />
+                <span> Dashboard</span>
+              </a>
+            </li>
+            <li
+              className={currentLink === 2 ? "active" : "none"}
+              onClick={() => setCurrentLink(2)}
+            >
+              <a href="#id-sms" >
+                <RiDashboard2Fill />
+                <span> SMS</span>
+              </a>
+            </li>
+            <li
+              className={currentLink === 3 ? "active" : "none"}
+              onClick={() => setCurrentLink(3)}
+            >
+              <a href="#">
+                <FaAddressCard />
+                <span> Users</span>
+              </a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </ResponsiveNav>
+      {/* <Sms/>
+            <Profile/> */}
+
+    </>
+
+  );
 }
 const Section = styled.section`
   position: fixed;

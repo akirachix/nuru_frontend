@@ -1,9 +1,12 @@
 import './profile.css'
 import profile from "../../image/person.png";
+import Sidebar from '../Sidebar';
 const Profile = () => {
   return (
-    <div className='profile'>
    
+  
+    <div className='profile' id='id-profile'>
+    <Sidebar/>
     <div className="flex-container-2">
     <div className="desktop-11">
       <div className="flex-container">
@@ -40,6 +43,8 @@ const Profile = () => {
       
    
     </div>
+    
+ 
     
   )
 }
