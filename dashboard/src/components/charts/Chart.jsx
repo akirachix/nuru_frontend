@@ -1,18 +1,17 @@
 import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, ColumnSeries, Category, Tooltip, Legend, RangeColorSettingsDirective, RangeColorSettingDirective } from '@syncfusion/ej2-react-charts';
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, ColumnSeries, Category, Tooltip, Legend } from '@syncfusion/ej2-react-charts';
 import './chart.css'
-// import "./feature.css";
-import { colorMappingData, ColorMappingPrimaryXAxis, ColorMappingPrimaryYAxis, rangeColorMapping } from '../../data/dummy';
-// import { ChartsHeader } from './components';
+import { colorMappingData, ColorMappingPrimaryXAxis, ColorMappingPrimaryYAxis } from '../../data/dummy';
 import ChartsHeader from '../ChartsHeader'
 import { useStateContext } from '../../contexts/ContextProvider';
 
-const ColorMapping = () => {
+const Chart = () => {
   const { currentMode } = useStateContext();
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+    <div className="chart-container">
       <ChartsHeader title="Registered Users in a week" />
+      <input type="date" className="date" name="data"/>
       <div className="chats">
         <ChartComponent
           id="charts"
@@ -37,13 +36,10 @@ const ColorMapping = () => {
               }}
             />
           </SeriesCollectionDirective>
-          <RangeColorSettingsDirective>
-            {rangeColorMapping.map((item, index) => <RangeColorSettingDirective key={index} {...item} />)}
-          </RangeColorSettingsDirective>
         </ChartComponent>
       </div>
     </div>
   );
 };
 
-export default ColorMapping;
+export default Chart;

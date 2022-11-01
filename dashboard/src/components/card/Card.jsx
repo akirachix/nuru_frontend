@@ -3,8 +3,7 @@ import './card.css'
  
 const Card = () => {
  return (
-    <div>
-        <div className='sms-container'>
+      <div className='sms-container'>
             <div className='sms-content'>
                <p>Total SMS</p>
                <br />
@@ -18,12 +17,11 @@ const Card = () => {
             </div>
 
             <div className='total'>
-               <p>Balance</p>
+               <p>Total Sms</p>
                <br />
                <p>2000</p>
             </div>
         </div>
-    </div>
  )
 }
  

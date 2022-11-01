@@ -3,14 +3,14 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 const Featured = () => {
   return (
-    <div className="featured">
+
+    
+    <div className="feature">
       <div className="top">
-        {/* <h1 className="title">Sent SMS</h1>
-        <MoreVertIcon fontSize="small" /> */}
       </div>
       <div className="bottom">
       <p className="amount1">Sent Sms</p>
-      <input type="date" className="start" name="trip-start" value="2022-07-22" min="2022-01-01" max="2022-12-31"></input>
+      <input type="date" className="start" name="birthday"/>
 
       <hr/>
         <div className="featuredChart">

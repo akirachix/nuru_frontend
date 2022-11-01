@@ -7,19 +7,13 @@ import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 import image from "../image/nuru.png";
-import { BiSearch } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
 import prof from "../image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
-import Card from "./card/Card";
-// import List from "./table/Table";
-import Featured from "./featured/Featured";
-import ColorMapping from "./charts/Chart";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
-// import Table from "./table/Table";
-// import Chart from "./charts/Chart";
+
 
 export default function Sidebar() {
   const [currentLink, setCurrentLink] = useState(1);
@@ -49,9 +43,13 @@ export default function Sidebar() {
                 <div className="icon">
                     <IoSettings />
                 </div>
+                <Link to="/profile">
                 <div className="image">
+                  <a href="/profile">
                     <img src={prof} alt="" />
+                    </a>
                 </div>
+                </Link>
             </Nav>
 
             <Section>
@@ -77,29 +75,22 @@ export default function Sidebar() {
                     </div>
                     <div className="links">
                         <ul>
-                            <li
-                                className={currentLink === 1 ? "active" : "none"}
-                                onClick={() => setCurrentLink(1)}
-                            >
-                                <a href="#">
+                            <li>
+                                <a href="dashboard">
                                     <MdSpaceDashboard />
                                     <span> Dashboard</span>
                                 </a>
                             </li>
-                            <li
-                                className={currentLink === 2 ? "active" : "none"}
-                                onClick={() => setCurrentLink(2)}
-                            >
-                                <a href="#">
+                            <li>
+                                <a href="/sms">
                                     <RiDashboard2Fill />
                                     <span> SMS</span>
                                 </a>
                             </li>
                             <li
-                                className={currentLink === 3 ? "active" : "none"}
-                                onClick={() => setCurrentLink(3)}
+                              
                             >
-                                <a href="#">
+                                <a href="users">
                                     <FaAddressCard />
                                     <span> Users</span>
                                 </a>
@@ -120,28 +111,25 @@ export default function Sidebar() {
                 <div className="responsive__links">
                     <ul>
                         <li
-                            className={currentLink === 1 ? "active" : "none"}
-                            onClick={() => setCurrentLink(1)}
+                         
                         >
-                            <a href="#">
+                            <a href="dashboard">
                                 <MdSpaceDashboard />
                                 <span> Dashboard</span>
                             </a>
                         </li>
                         <li
-                            className={currentLink === 2 ? "active" : "none"}
-                            onClick={() => setCurrentLink(2)}
+                        
                         >
-                            <a href="#">
+                            <a href="/sms">
                                 <RiDashboard2Fill />
                                 <span> SMS</span>
                             </a>
                         </li>
                         <li
-                            className={currentLink === 3 ? "active" : "none"}
-                            onClick={() => setCurrentLink(3)}
+                         
                         >
-                            <a href="#">
+                            <a href="users">
                                 <FaAddressCard />
                                 <span> Users</span>
                             </a>
@@ -152,10 +140,7 @@ export default function Sidebar() {
                     </ul>
                 </div>
             </ResponsiveNav>
-            <Card/>
-            <Featured/>
-            <ColorMapping/>
-            {/* <Table/> */}
+
         </>
 
     );
