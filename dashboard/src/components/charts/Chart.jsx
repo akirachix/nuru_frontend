@@ -11,7 +11,7 @@ const Chart = () => {
   return (
     <div className="chart-container">
       <ChartsHeader title="Registered Users in a week" />
-      <input type="date" className="date" name="data"/>
+      <input type="date" className="dat" name="data"/>
       <div className="chats">
         <ChartComponent
           id="charts"

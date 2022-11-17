@@ -57,7 +57,7 @@ export default function Sidebar() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/sms">
+                                <a href="sms">
                                     <RiDashboard2Fill />
                                     <span> SMS</span>
                                 </a>
@@ -96,7 +96,7 @@ export default function Sidebar() {
                         <li
                         
                         >
-                            <a href="/sms">
+                            <a href="sms">
                                 <RiDashboard2Fill />
                                 <span> SMS</span>
                             </a>

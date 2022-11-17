@@ -6,7 +6,7 @@ import prof from "/home/student/nuru_frontend/dashboard/src/image/profile.jpeg";
 import { VscBell } from "react-icons/vsc";
 import { Link } from 'react-router-dom';
 import Searchbar from "../Searchbar/Searchbar.jsx";
-import styled from "styled-components";
+import SendMessage from '../SendMessage';
 // import { searching } from '../Searchbar/Searchbar.jsx';
 
 
@@ -30,6 +30,7 @@ function Users() {
 
 }
 else{
+  setUsers(users)
   
 }
 
@@ -39,17 +40,17 @@ else{
     // setIsLoading(true);
     // try {
       // const response = await
-      axios.get("https://still-oasis-20492.herokuapp.com/api/Users/")
+      axios.get("https://nurucare.herokuapp.com/api/Users/")
       .then(res=>{
         console.log(res.data)
         setUsers(res.data)
       })
-      // console.log(response.data)
-      // if (response.status !== 200) {
-      //   throw new Error(`Something went wrong!: ${response.status}`);
-      // }
-      // const data = await response.data.json();
-      // if (data) setUsers(data);
+    //   console.log(response.data)
+    //   if (response.status !== 200) {
+    //     throw new Error(`Something went wrong!: ${response.status}`);
+    //   }
+    //   const data = await response.data.json();
+    //   if (data) setUsers(data);
     // } catch (error) {
     //   setError(error);
     // } finally {
@@ -64,14 +65,14 @@ return (
                         <span></span>
                     </h1>import prof from "./image/profile.jpeg"; */}
                     <div>
-         <div className="search">  
-                    <input 
-                    type="text" 
-                    placeholder="Search" 
-                    onChange={(e)=>{searching(e.target.value)}}
-                    
-                    />
-                </div>
+                 
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="search"/>
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+
+</div>
     </div>                </div>
                 <div className="notification">
                     <VscBell />
@@ -90,27 +91,33 @@ return (
        <h1 className='user'>Users</h1>
  <div className='head'>
         </div>
-         <button className='add' type="button">Add</button>
+         <Link to='/add_user'>
+         <a><button className='add' type="button">Add</button></a></Link>
  <table id="users" className="table table-dark table-borderless">
         <tr>
+          <th>Select</th>
           <th>User's full Name</th>
           <th>Child's Name</th>
           <th>Child's Date of Birth</th>
           <th>Registration Date</th>
           <th>User's Phone Number</th>
           <th>Appointment Date</th>
+          <th>Action</th>
           {/* <th>Action</th> */}
         </tr>
         {/* {filteredUsers.length!==} */}
          {users.map(item => {
           return (
             <tr>
+              <td><input type="checkbox" id='check'></input></td>
               <td>{item.full_name}</td>
               <td>{item.child_name}</td>
               <td>{item.child_date_of_birth}</td>
               <td>{item.registration_date}</td>
               <td>{item.Phone_number}</td>
               <td>{item.appointment_date}</td>
+              
+              <td><Link to=" "><button type='submit' onClick={SendMessage} id='send'>Send Message</button></Link></td>
               {/* <td>{item.action}</td> */}
             </tr>
           )

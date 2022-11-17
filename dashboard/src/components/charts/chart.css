@@ -14,9 +14,11 @@
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     height: 84vh;
 }
-.date{
+.dat{
     margin-top: -23%;
     margin-left: 65%;
     padding: 2%;
     border-radius: 10px;
+    width: 30%;
+    height: 2vh;
 }

@@ -3,7 +3,9 @@ import './card.css'
  
 const Card = () => {
  return (
+   
       <div className='sms-container'>
+
             <div className='sms-content'>
                <p>Total SMS</p>
                <br />

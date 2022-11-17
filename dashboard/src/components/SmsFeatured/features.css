@@ -36,21 +36,22 @@
     width: 20%;
     padding: 1%;
     border-radius: 10px;
-    box-shadow: 4px 8px  rgba(241, 236, 236, 0.47);
+    box-shadow: 4px 8px  rgba(241, 236, 236, 0.47);                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                      
+}                                                                                                                                                                                                               
 
-}
-
-.container {
+.container {                                                                                                                                                                                                                                                                                                    
     display: flex;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-    /* padding: 1%; */
-    margin-left: 19%;
+    /* padding: 10%; */
+    /* margin-left: 3z  9%; */
+    /* width: 10%; */
   }
   .container .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;                                                                                                                                                                         
     color: gray;
     margin-top: -20%;
   }

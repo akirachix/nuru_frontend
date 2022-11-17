@@ -10,7 +10,7 @@ const Featured = () => {
       </div>
       <div className="bottom">
       <p className="amount1">Sent Sms</p>
-      <input type="date" className="start" name="birthday"/>
+      <input type="date" className="start" />
 
       <hr/>
         <div className="featuredChart">

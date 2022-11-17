@@ -1,9 +1,20 @@
+
 #users {
     width: 95%;
   }
 .app{
     margin-left: 17%;
   }
+
+#send
+{
+  padding: 7%;
+  border-radius: 10px;
+  border: none;
+  background-color: #05277C;
+  color: white;
+  font-weight: bolder;
+}
 table th, td  {
     border: 2px solid;
     padding: 40px;
@@ -48,11 +59,68 @@ table th, td  {
   margin-top: -10%;
   /* /* margin-top: -45%; */
   }
+
+  .container{
+    margin-left: 30%;
+    display: flex;
+    gap: 30px;
+  }
   .nav{
     display: flex;
     padding: 2%;
-    margin-bottom: -6%;
-    margin-left: 25%;
+    /* margin-bottom: -6%; */
+    margin-left: 45%;
     gap: 40px;
     font-size: 20px;
+}  
+.notification{
+  margin-left: 29%;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-left: 20%;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #05277C;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #05277C;
+}
+#check
+{
+  margin-left: -115%;
+  height: 20px;
+  /* width: 20%; */
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #05277C;
+  background: #05277C;
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

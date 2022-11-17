@@ -7,16 +7,18 @@ import Dashboard from './components/dashboard';
 import Messages from './components/sms';
 import Users from './components/users';
 import Profile from './components/profile/Profile';
+import Adduser from './components/Adduser';
 
 function App() {
   return (
     < Router>
       <Routes>
-        <Route path='/dashboard' element={ <Dashboard/> } />
+        <Route path='/' element={ <Dashboard/> } />
         <Route path='/features' element={ <Features/> } />
         <Route path='/sms' element={ <Messages/> } />
         <Route path='/users' element={ <Users/> } />
         <Route path='/profile' element={ <Profile/> } />
+        <Route path='/add_user' element={ <Adduser/> } />
       </Routes>
     </Router>
 
